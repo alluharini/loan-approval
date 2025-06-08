@@ -1,0 +1,101 @@
+<!-- templates/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Prediction</title>
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            /* Add the background image style */
+            background-image: url('YOUR_IMAGE_URL');
+            background-size: cover; /* Adjust as needed */
+            background-position: center; /* Adjust as needed */
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 20px auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #333;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Loan Prediction Form</h1>
+    <form action="/result" method="post">
+        <label for="ApplicantIncome">Enter Applicant's Income:</label>
+        <input type="text" name="ApplicantIncome" required><br>
+
+        <label for="CoapplicantIncome">Enter Coapplicant's Income:</label>
+        <input type="text" name="CoapplicantIncome" required><br>
+
+        <label for="LoanAmount">Loan Amount:</label>
+        <input type="text" name="LoanAmount" required><br>
+
+        <label for="Loan_Amount_Term">Loan Amount Term:</label>
+        <input type="text" name="Loan_Amount_Term" required><br>
+
+        <label for="Credit_History">Credit History (1 for Yes, 0 for No):</label>
+        <input type="text" name="Credit_History" required><br>
+
+        <label for="Gender">Gender (Male or Female):</label>
+        <input type="text" name="Gender" required><br>
+
+        <label for="Married">Marital Status (Yes or No):</label>
+        <input type="text" name="Married" required><br>
+
+        <label for="Dependents">Dependents:</label>
+        <input type="text" name="Dependents" required><br>
+
+        <label for="Education">Education (Graduate or Not Graduate):</label>
+        <input type="text" name="Education" required><br>
+
+        <label for="Self_Employed">Self Employment Status (Yes or No):</label>
+        <input type="text" name="Self_Employed" required><br>
+
+        <label for="Property_Area">Property Area (Urban, Semiurban, or Rural):</label>
+        <input type="text" name="Property_Area" required><br>
+
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>
